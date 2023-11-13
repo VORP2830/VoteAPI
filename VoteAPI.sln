@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.Infra.IoC", "VoteAPI.Infra.IoC\VoteAPI.Infra.IoC.csproj", "{05E8443D-E202-462A-B8D1-6322B1727F8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.Application", "VoteAPI.Application\VoteAPI.Application.csproj", "{336C84F1-466E-437C-81D3-79007FDB38DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.Infra.Data", "VoteAPI.Infra.Data\VoteAPI.Infra.Data.csproj", "{F02245C7-B249-4C92-8D78-991308367DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.Domain", "VoteAPI.Domain\VoteAPI.Domain.csproj", "{C462CF42-5A1B-48BD-8864-DC093E16BA25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.API", "VoteAPI.API\VoteAPI.API.csproj", "{DD1F742C-0D21-4B68-B6C3-A0F168834449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.Domain.Tests", "VoteAPI.Domain.Tests\VoteAPI.Domain.Tests.csproj", "{C3037628-467B-4061-9F75-70A763A4A86C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05E8443D-E202-462A-B8D1-6322B1727F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E8443D-E202-462A-B8D1-6322B1727F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E8443D-E202-462A-B8D1-6322B1727F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E8443D-E202-462A-B8D1-6322B1727F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{336C84F1-466E-437C-81D3-79007FDB38DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{336C84F1-466E-437C-81D3-79007FDB38DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{336C84F1-466E-437C-81D3-79007FDB38DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{336C84F1-466E-437C-81D3-79007FDB38DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02245C7-B249-4C92-8D78-991308367DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02245C7-B249-4C92-8D78-991308367DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02245C7-B249-4C92-8D78-991308367DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02245C7-B249-4C92-8D78-991308367DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C462CF42-5A1B-48BD-8864-DC093E16BA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C462CF42-5A1B-48BD-8864-DC093E16BA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C462CF42-5A1B-48BD-8864-DC093E16BA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C462CF42-5A1B-48BD-8864-DC093E16BA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1F742C-0D21-4B68-B6C3-A0F168834449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1F742C-0D21-4B68-B6C3-A0F168834449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1F742C-0D21-4B68-B6C3-A0F168834449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1F742C-0D21-4B68-B6C3-A0F168834449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3037628-467B-4061-9F75-70A763A4A86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3037628-467B-4061-9F75-70A763A4A86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3037628-467B-4061-9F75-70A763A4A86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3037628-467B-4061-9F75-70A763A4A86C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
