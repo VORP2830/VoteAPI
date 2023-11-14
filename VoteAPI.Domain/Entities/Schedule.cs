@@ -17,8 +17,8 @@ namespace VoteAPI.Domain.Entities
         {
             VoteAPIException.When(string.IsNullOrEmpty(description), "Descrição é obrigatória");
             VoteAPIException.When(description.Length < 5, "Descrição deve ter no mínimo 5 caracteres");
-            VoteAPIException.When(startingDate > DateTime.Now, "Não é possível abrir uma pauta retroativa");
-            VoteAPIException.When(finishingDate > DateTime.Now, "Não é possível fechar uma pauta retroativa");
+            VoteAPIException.When(startingDate < DateTime.Now, "Não é possível abrir uma pauta retroativa");
+            VoteAPIException.When(finishingDate < DateTime.Now, "Não é possível fechar uma pauta retroativa");
             VoteAPIException.When(finishingDate < startingDate, "A data de encerramento não pode ser anterior à data de início da pauta");
             Description = description.Trim();
             StartingDate = startingDate;
