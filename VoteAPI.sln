@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.Domain", "VoteAPI.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.API", "VoteAPI.API\VoteAPI.API.csproj", "{DD1F742C-0D21-4B68-B6C3-A0F168834449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.Domain.Tests", "VoteAPI.Domain.Tests\VoteAPI.Domain.Tests.csproj", "{C3037628-467B-4061-9F75-70A763A4A86C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteAPI.Tests", "VoteAPI.Tests\VoteAPI.Tests.csproj", "{DCC8EA0B-1865-42ED-8F7E-B96F09FDBD12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,5 +48,9 @@ Global
 		{C3037628-467B-4061-9F75-70A763A4A86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3037628-467B-4061-9F75-70A763A4A86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3037628-467B-4061-9F75-70A763A4A86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC8EA0B-1865-42ED-8F7E-B96F09FDBD12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC8EA0B-1865-42ED-8F7E-B96F09FDBD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC8EA0B-1865-42ED-8F7E-B96F09FDBD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC8EA0B-1865-42ED-8F7E-B96F09FDBD12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
