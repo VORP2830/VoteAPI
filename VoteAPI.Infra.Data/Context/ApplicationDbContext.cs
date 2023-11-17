@@ -11,6 +11,7 @@ namespace VoteAPI.Infra.Data.Context
         public DbSet<Person> People { get; set; }
         public DbSet<Schedule> Schedules { get; set; }
         public DbSet<Vote> Votes { get; set; }
+        public DbSet<VotationResult> VotationResults { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

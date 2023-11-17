@@ -20,10 +20,10 @@ namespace VoteAPI.Domain.Entities
             VoteAPIException.When(personId <= 0, "O ID da pessoa votante é inválido");
             VoteAPIException.When(scheduleId <= 0, "O ID da pauta a ser votada é inválido");
             VoteAPIException.When(string.IsNullOrEmpty(voteOption), "A opção de voto é obrigatória e não pode estar em branco");
-            VoteAPIException.When(voteOption.Length != 1 || (voteOption != "S" && voteOption != "N"), "Opção de voto inválida. Deve ser 'S' para Sim ou 'N' para Não");
+            VoteAPIException.When(voteOption.Length != 1 || (voteOption.ToUpper() != "S" && voteOption.ToUpper() != "N"), "Opção de voto inválida. Deve ser 'S' para Sim ou 'N' para Não");
             PersonId = personId;
             ScheduleId = scheduleId;
-            VoteOption = voteOption;
+            VoteOption = voteOption.ToUpper();
         }
     }
 }

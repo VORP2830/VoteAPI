@@ -5,6 +5,7 @@ namespace VoteAPI.Domain.Interfaces
         IPersonRepository PersonRepository { get; }
         IScheduleRepository ScheduleRepository { get; }
         IVoteRepository VoteRepository { get; }
+        IVotationResultRepository VotationResultRepository { get; }
         Task<bool> SaveChangesAsync(); 
     }
 }

@@ -12,7 +12,7 @@ using VoteAPI.Infra.Data.Context;
 namespace VoteAPI.Infra.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231114161027_V_01_00")]
+    [Migration("20231116125735_V_01_00")]
     partial class V_01_00
     {
         /// <inheritdoc />
@@ -45,10 +45,6 @@ namespace VoteAPI.Infra.Data.Migrations
 
                     b.Property<DateTime>("ModifiedAt")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
