@@ -17,7 +17,32 @@ services:
     container_name: VoteAPI.API
     depends_on:
       - db
+      - rabbitmq
+      - cpfvalidationapi
     ports:
       - "80:80"
     environment:
       DATABASE: Host=db;Database=VoteAPI;Username=postgres;Password=senha
+      RABITMQHOST: rabbitmq
+      RABITMQUSER: user      
+      RABITMQPASSWORD: senha   
+      RABITMQPORT: 5672       
+      CPFAPI: http://cpfvalidationapi:3000          
+
+  rabbitmq:
+    image: "rabbitmq:latest"
+    container_name: RabbitMQ
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: senha
+    ports:
+      - "5672:5672" 
+      - "15672:15672" 
+  
+  cpfvalidationapi:
+    build:
+      context: . 
+      dockerfile: Dockerfile.CPF
+    container_name: CPFValidation.API
+    ports:
+      - "3000:3000"

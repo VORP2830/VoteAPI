@@ -13,7 +13,6 @@ namespace VoteAPI.API.Controllers
         public VoteController(IVoteService voteService)
         {
             _voteService = voteService;
-            var timer = new Timer(async (_) => await Get(), null, TimeSpan.Zero, TimeSpan.FromSeconds(5));
         }
         [HttpPost]
         public async Task<IActionResult> Create(VoteDTO model)

@@ -10,5 +10,6 @@ COPY --from=build-env /app/out .
 EXPOSE 80
 
 ENV LANG pt_BR.UTF-8
+ENV TZ=America/Sao_Paulo
 
 CMD ["dotnet", "VoteAPI.API.dll"]
